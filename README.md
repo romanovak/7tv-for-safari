@@ -51,8 +51,8 @@ To avoid step 5 every time, build and sign it yourself with your own Apple ID (s
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-user>/<this-repo>.git
-   cd <this-repo>
+   git clone https://github.com/romanovak/7tv-for-safari.git
+   cd 7tv-for-safari
    ```
 2. **Open the project**
    ```bash
