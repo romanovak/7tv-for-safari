@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="7TV for Safari, Twitch only">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e0e10"/><stop offset="1" stop-color="#1b1030"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#29b6f6" stop-opacity="0.28"/><stop offset="1" stop-color="#29b6f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="320" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="20" fill="url(#glow)"/>
+  <g fill="#29b6f6" transform="translate(96 88) scale(2.2)"><path d="M84.1,22.2l5-8.7,2.7-4.6L86.8.2V0H60.1l5,8.7,5,8.7,2.8,4.8H84.1"/><path d="M29,80.6l5-8.7,5-8.7,5-8.7,5-8.7,5-8.7,5-8.7L62.7,22l-5-8.7-5-8.7L49.9.1H7.7l-5,8.7L0,13.4l5,8.7v.2h32l-5,8.7-5,8.7-5,8.7-5,8.7-5,8.7L8.5,72l5,8.7v.2H29"/><path d="M70.8,80.6H86.1l5-8.7,5-8.7,5-8.7,5-8.7,3.5-6-5-8.7v-.2H89.2l-5,8.7-5,8.7-.7,1.3-5-8.7-5-8.7-.7-1.3-5,8.7-5,8.7L55,53.1l5,8.7,5,8.7,5,8.7.8,1.4"/></g>
+  <g font-family="-apple-system, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="400" y="150" font-size="68" font-weight="800" fill="#ffffff">7TV for Safari</text>
+    <text x="402" y="200" font-size="28" fill="#c9c9d1">7TV emotes and chat tools on Twitch, in Safari for macOS</text>
+    <g transform="translate(402 232)">
+      <rect width="150" height="38" rx="19" fill="#9146ff"/>
+      <text x="75" y="26" font-size="19" font-weight="700" fill="#fff" text-anchor="middle">Twitch only</text>
+      <rect x="166" width="168" height="38" rx="19" fill="none" stroke="#5a5a66" stroke-width="2"/>
+      <text x="250" y="26" font-size="19" fill="#c9c9d1" text-anchor="middle">Universal build</text>
+      <rect x="350" width="150" height="38" rx="19" fill="none" stroke="#5a5a66" stroke-width="2"/>
+      <text x="425" y="26" font-size="19" fill="#c9c9d1" text-anchor="middle">Unofficial</text>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
-# Análisis de la extensión oficial de 7TV (v3.1.26) y plan para Safari
+# Análisis de la extensión oficial de 7TV (v3.1.26) para Safari
 
-Fuente: https://github.com/SevenTV/Extension (commit 69eaa09, clonado en el scratchpad, no está en este proyecto).
+Fuente: https://github.com/SevenTV/Extension (commit `69eaa09`). Este repositorio no incluye ese código fuente; `scripts/build-extension.sh` lo descarga y lo compila.
 
 ## Estructura
 
@@ -29,21 +29,15 @@ Cómo funciona: el content script solo inyecta; todo lo demás se engancha a los
 - **Moderación:** comando `/nuke`, mod logs, mod slider.
 - Otros: autoclaim de puntos, difuminar emotes no listados, tooltips compactos, transparencias, sidebar previews.
 
-## Interpretación para Safari
+## Decisión para Safari
 
-El código oficial no se puede "copiar" tal cual:
-1. Requiere Node/yarn/Vite para compilarse (aquí no hay node) y su inyección depende de internos de React de Twitch.
-2. Safari no soporta bien `options_ui` en pestaña ni varias APIs; hay que usar popup + página de opciones empaquetada.
-3. Pinturas, badges y emotes en vivo dependen de un WebSocket de eventos de 7TV y de la sesión del usuario.
+Se compiló la extensión oficial y se adaptó (ver README, «Changes from upstream»):
 
-### Opción recomendada: ampliar mi extensión ligera (fases)
+- Solo `twitch.tv`; sin permisos de YouTube/Kick.
+- `background.scripts` en lugar de service worker (Safari), sin `default_area` ni sourcemaps.
+- Se eliminó la inyección de ~8 MB de emojis SVG (el content script los descargaba en cada página): se usan los emojis nativos de macOS.
+- Se descartaron imágenes de onboarding e iconos nightly. Resultado: 14 MB → 2,4 MB.
 
-1. **Popup + opciones** con `browser.storage`: interruptores 7TV/BTTV/FFZ, escala y margen de emotes, ancho cero, blur de no listados.
-2. **Chat:** tamaño de fuente, padding, fondo alternado, ocultar timestamps/badges, resaltados (mención, propio) con CSS/JS.
-3. **Diseño:** los `layout.hide_*` más útiles como reglas CSS activables.
-4. **Menú de emotes** propio (botón junto al chat, búsqueda, favoritos) y autocompletado `:emote` en el input.
-5. **Opcional:** pinturas/badges y actualizaciones en vivo (WebSocket 7TV EventAPI).
+Limitaciones conocidas: la extensión depende de internos de React/DOM de Twitch (puede romperse con cambios de Twitch), y las funciones con cuenta de 7TV (pinturas, badges, conexión en vivo) no se han verificado en Safari.
 
-### Alternativa: compilar la oficial y convertirla
-
-Instalar node + yarn, `yarn build`, ajustar el manifest para Safari y pasar por `safari-web-extension-converter`. Da todas las funciones, pero es frágil y se rompe cuando Twitch cambia su DOM.
+`extension-lite/` es una alternativa mínima hecha desde cero para quien solo quiera emotes.

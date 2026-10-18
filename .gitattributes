@@ -1,0 +1,4 @@
+# Minified upstream build output: keep it out of language stats and diffs.
+extension-official/** linguist-vendored
+extension-official/** -diff
+*.pbxproj linguist-generated

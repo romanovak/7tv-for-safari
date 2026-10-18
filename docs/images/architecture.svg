@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="How the extension is packaged and runs">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8d8d99"/></marker></defs>
+  <rect width="1280" height="420" rx="20" fill="#0e0e10"/>
+  <g font-family="-apple-system, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif" fill="#fff">
+    <rect x="30" y="30" width="520" height="360" rx="16" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <text x="52" y="66" font-size="20" font-weight="700">7TV Safari.app  <tspan fill="#8d8d99" font-weight="400" font-size="15">(macOS host app)</tspan></text>
+    <rect x="52" y="90" width="476" height="276" rx="12" fill="#101014" stroke="#3a3a42" stroke-width="2"/>
+    <text x="72" y="122" font-size="17" font-weight="700" fill="#29b6f6">Safari Web Extension (.appex)</text>
+    <rect x="72" y="140" width="200" height="64" rx="10" fill="#1f1f25"/>
+    <text x="172" y="168" font-size="16" font-weight="700" text-anchor="middle">background.js</text>
+    <text x="172" y="190" font-size="13" fill="#8d8d99" text-anchor="middle">event page, messaging</text>
+    <rect x="72" y="222" width="200" height="64" rx="10" fill="#1f1f25"/>
+    <text x="172" y="250" font-size="16" font-weight="700" text-anchor="middle">index.html</text>
+    <text x="172" y="272" font-size="13" fill="#8d8d99" text-anchor="middle">popup + options page</text>
+    <rect x="292" y="140" width="216" height="64" rx="10" fill="#1f1f25"/>
+    <text x="400" y="168" font-size="16" font-weight="700" text-anchor="middle">content.js</text>
+    <text x="400" y="190" font-size="13" fill="#8d8d99" text-anchor="middle">injects site.js + CSS</text>
+    <rect x="292" y="222" width="216" height="64" rx="10" fill="#1f1f25"/>
+    <text x="400" y="250" font-size="16" font-weight="700" text-anchor="middle">worker.js</text>
+    <text x="400" y="272" font-size="13" fill="#8d8d99" text-anchor="middle">7TV data + live events</text>
+    <text x="72" y="326" font-size="13" fill="#8d8d99">manifest.json: twitch.tv, 7tv.io, betterttv.net</text>
+    <text x="72" y="348" font-size="13" fill="#8d8d99">≈ 2.4 MB, loaded only on twitch.tv</text>
+    <rect x="700" y="60" width="550" height="150" rx="16" fill="#18181b" stroke="#9146ff" stroke-width="2"/>
+    <text x="724" y="96" font-size="20" font-weight="700">twitch.tv  <tspan fill="#8d8d99" font-weight="400" font-size="15">(Safari tab)</tspan></text>
+    <rect x="724" y="116" width="502" height="64" rx="10" fill="#1f1f25"/>
+    <text x="975" y="144" font-size="16" font-weight="700" text-anchor="middle">site.js (Vue app)</text>
+    <text x="975" y="166" font-size="13" fill="#8d8d99" text-anchor="middle">replaces the chat, adds emote menu, settings, highlights, layout options</text>
+    <rect x="700" y="270" width="550" height="120" rx="16" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <text x="724" y="306" font-size="20" font-weight="700">7TV API</text>
+    <text x="724" y="336" font-size="15" fill="#c9c9d1">7tv.io · cdn.7tv.app · BTTV / FFZ via 7TV</text>
+    <text x="724" y="360" font-size="13" fill="#8d8d99">emote sets, channel data, cosmetics</text>
+  </g>
+  <g stroke="#8d8d99" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M508 172C600 172 640 148 700 148" stroke-dasharray="6 5"/>
+    <path d="M508 254C600 300 640 320 700 320"/>
+  </g>
+</svg>

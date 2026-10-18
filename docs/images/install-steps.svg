@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 270" width="1280" height="270" role="img" aria-label="Installation steps">
+  <rect width="1280" height="270" rx="20" fill="#0e0e10"/>
+  <g font-family="-apple-system, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif">
+  <g transform="translate(24 40)">
+    <rect width="224" height="190" rx="14" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <circle cx="36" cy="40" r="20" fill="#29b6f6"/>
+    <text x="36" y="47" font-size="22" font-weight="800" fill="#0e0e10" text-anchor="middle">1</text>
+    <text x="68" y="48" font-size="20" font-weight="700" fill="#fff">Download</text>
+    <text x="20" y="100" font-size="15" fill="#c9c9d1">Get the .zip from</text>
+    <text x="20" y="124" font-size="15" fill="#c9c9d1">the latest Release</text>
+    <text x="20" y="148" font-size="15" fill="#8d8d99">and unzip it.</text>
+  </g>
+  <g transform="translate(276 40)">
+    <rect width="224" height="190" rx="14" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <circle cx="36" cy="40" r="20" fill="#29b6f6"/>
+    <text x="36" y="47" font-size="22" font-weight="800" fill="#0e0e10" text-anchor="middle">2</text>
+    <text x="68" y="48" font-size="20" font-weight="700" fill="#fff">Install</text>
+    <text x="20" y="100" font-size="15" fill="#c9c9d1">Move the app to</text>
+    <text x="20" y="124" font-size="15" fill="#c9c9d1">Applications, then run</text>
+    <text x="20" y="148" font-size="15" fill="#8d8d99">xattr -cr on it.</text>
+  </g>
+  <g transform="translate(528 40)">
+    <rect width="224" height="190" rx="14" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <circle cx="36" cy="40" r="20" fill="#29b6f6"/>
+    <text x="36" y="47" font-size="22" font-weight="800" fill="#0e0e10" text-anchor="middle">3</text>
+    <text x="68" y="48" font-size="20" font-weight="700" fill="#fff">Open once</text>
+    <text x="20" y="100" font-size="15" fill="#c9c9d1">Launch the app so</text>
+    <text x="20" y="124" font-size="15" fill="#c9c9d1">macOS registers the</text>
+    <text x="20" y="148" font-size="15" fill="#8d8d99">Safari extension.</text>
+  </g>
+  <g transform="translate(780 40)">
+    <rect width="224" height="190" rx="14" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <circle cx="36" cy="40" r="20" fill="#29b6f6"/>
+    <text x="36" y="47" font-size="22" font-weight="800" fill="#0e0e10" text-anchor="middle">4</text>
+    <text x="68" y="48" font-size="20" font-weight="700" fill="#fff">Allow</text>
+    <text x="20" y="100" font-size="15" fill="#c9c9d1">Develop menu →</text>
+    <text x="20" y="124" font-size="15" fill="#c9c9d1">Allow Unsigned</text>
+    <text x="20" y="148" font-size="15" fill="#8d8d99">Extensions (each launch)</text>
+  </g>
+  <g transform="translate(1032 40)">
+    <rect width="224" height="190" rx="14" fill="#18181b" stroke="#2f2f35" stroke-width="2"/>
+    <circle cx="36" cy="40" r="20" fill="#29b6f6"/>
+    <text x="36" y="47" font-size="22" font-weight="800" fill="#0e0e10" text-anchor="middle">5</text>
+    <text x="68" y="48" font-size="20" font-weight="700" fill="#fff">Enable</text>
+    <text x="20" y="100" font-size="15" fill="#c9c9d1">Settings → Extensions →</text>
+    <text x="20" y="124" font-size="15" fill="#c9c9d1">7TV, and set twitch.tv</text>
+    <text x="20" y="148" font-size="15" fill="#8d8d99">to Allow.</text>
+  </g>
+  </g>
+  <g stroke="#5a5a66" stroke-width="2" fill="none"><path d="M250 135h24"/><path d="M502 135h24"/><path d="M754 135h24"/><path d="M1006 135h24"/></g>
+</svg>
