@@ -24,7 +24,30 @@ Unofficial port of the [7TV browser extension](https://github.com/SevenTV/Extens
 - macOS with **Safari 17 or later**
 - **Xcode** (full app from the Mac App Store, not just Command Line Tools)
 
-## Installation
+## Quick install (prebuilt, no Xcode)
+
+Download **`7TV-for-Safari-v0.1.0-macOS.zip`** from the [Releases page](https://github.com/romanovak/7tv-for-safari/releases/latest). It is a universal build (Apple Silicon + Intel) for macOS with Safari 17+.
+
+> The app is **not signed with an Apple Developer ID**, so macOS and Safari will warn about it. That is expected; follow the steps below.
+
+1. **Unzip** the download and move **7TV Safari.app** to your **Applications** folder.
+2. **Remove the quarantine flag** (macOS blocks unsigned downloaded apps). In Terminal:
+   ```bash
+   xattr -cr "/Applications/7TV Safari.app"
+   ```
+   Or right-click the app → **Open** → **Open**.
+3. **Open the app once** so macOS registers the extension, then quit it.
+4. **Enable Safari's developer mode:** Safari → **Settings → Advanced** → check *Show features for web developers*.
+5. **Allow unsigned extensions:** menu bar **Develop → Allow Unsigned Extensions** (enter your password). **Safari forgets this every time it quits**, so repeat it after each restart.
+6. **Turn on the extension:** Safari → **Settings → Extensions** → tick **7TV**.
+7. **Grant access:** select 7TV → **Edit Websites…** → set `twitch.tv` to **Allow** (also allow `7tv.io` if asked).
+8. Open a channel on **twitch.tv** and reload the page.
+
+Verify the download (optional): `shasum -a 256 7TV-for-Safari-v0.1.0-macOS.zip` should match `SHA256.txt` on the release.
+
+To avoid step 5 every time, build and sign it yourself with your own Apple ID (see *Installation* below), or use a paid Developer account.
+
+## Installation (build from source)
 
 1. **Clone the repository**
    ```bash
