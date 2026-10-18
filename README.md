@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/romanovak/7tv-for-safari/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/romanovak/7tv-for-safari?color=29b6f6"></a>
+  <a href="https://github.com/romanovak/7tv-for-safari/releases/latest"><img alt="Download latest release" src="https://img.shields.io/badge/download-latest%20release-29b6f6"></a>
   <img alt="Platform" src="https://img.shields.io/badge/macOS-13%2B-black">
   <img alt="Safari" src="https://img.shields.io/badge/Safari-Web%20Extension-006cff">
   <img alt="Scope" src="https://img.shields.io/badge/scope-twitch.tv%20only-9146ff">
