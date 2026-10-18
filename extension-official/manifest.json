@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "7TV",
+  "version": "3.1.26",
+  "version_name": "3.1.26",
+  "description": "Improve your viewing experience on Twitch & Kick with new features, emotes, vanity and performance.",
+  "action": {
+    "default_icon": "./icon/icon-128.png",
+    "default_popup": "index.html#/popup?noheader=1"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitch.tv/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "index.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icon/icon-16.png",
+    "48": "icon/icon-48.png",
+    "128": "icon/icon-128.png"
+  },
+  "host_permissions": [
+    "*://*.twitch.tv/*",
+    "https://7tv.io/*",
+    "https://*.7tv.io/*",
+    "https://cdn.7tv.app/*",
+    "https://api.betterttv.net/*",
+    "https://cdn.betterttv.net/*"
+  ],
+  "permissions": [
+    "scripting",
+    "storage",
+    "activeTab"
+  ],
+  "optional_permissions": [],
+  "optional_host_permissions": [
+    "*://*.7tv.app/*",
+    "*://*.7tv.io/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "site.js",
+        "worker.js",
+        "index.html",
+        "assets/*"
+      ],
+      "matches": [
+        "*://*.twitch.tv/*"
+      ]
+    }
+  ]
+}

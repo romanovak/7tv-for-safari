@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047DC5263084F4400078E14C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DC5253084F4400078E14C /* AppDelegate.swift */; };
+		047DC52A3084F4400078E14C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5283084F4400078E14C /* Main.html */; };
+		047DC52C3084F4400078E14C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047DC52B3084F4400078E14C /* Icon.png */; };
+		047DC52E3084F4400078E14C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 047DC52D3084F4400078E14C /* Style.css */; };
+		047DC5303084F4400078E14C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 047DC52F3084F4400078E14C /* Script.js */; };
+		047DC5323084F4400078E14C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DC5313084F4400078E14C /* ViewController.swift */; };
+		047DC5353084F4400078E14C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5333084F4400078E14C /* Main.storyboard */; };
+		047DC5373084F4410078E14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5363084F4410078E14C /* Assets.xcassets */; };
+		047DC53E3084F4410078E14C /* 7TV Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 047DC53D3084F4410078E14C /* 7TV Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		047DC5433084F4410078E14C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047DC5423084F4410078E14C /* SafariWebExtensionHandler.swift */; };
+		047DC5593084F4410078E14C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 047DC54F3084F4410078E14C /* index.html */; };
+		047DC55A3084F4410078E14C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5503084F4410078E14C /* background.js */; };
+		047DC55B3084F4410078E14C /* worker.js in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5513084F4410078E14C /* worker.js */; };
+		047DC55C3084F4410078E14C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5523084F4410078E14C /* manifest.json */; };
+		047DC55D3084F4410078E14C /* site.js in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5533084F4410078E14C /* site.js */; };
+		047DC55E3084F4410078E14C /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5543084F4410078E14C /* content.js */; };
+		047DC55F3084F4410078E14C /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5553084F4410078E14C /* icon */; };
+		047DC5603084F4410078E14C /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5563084F4410078E14C /* fonts */; };
+		047DC5613084F4410078E14C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5573084F4410078E14C /* assets */; };
+		047DC5623084F4410078E14C /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 047DC5583084F4410078E14C /* logo.svg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047DC53F3084F4410078E14C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047DC51A3084F4400078E14C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047DC53C3084F4410078E14C;
+			remoteInfo = "7TV Safari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		047DC54A3084F4410078E14C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				047DC53E3084F4410078E14C /* 7TV Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		047DC5223084F4400078E14C /* 7TV Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7TV Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047DC5253084F4400078E14C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		047DC5293084F4400078E14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		047DC52B3084F4400078E14C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		047DC52D3084F4400078E14C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		047DC52F3084F4400078E14C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		047DC5313084F4400078E14C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		047DC5343084F4400078E14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047DC5363084F4410078E14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047DC5383084F4410078E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047DC53D3084F4410078E14C /* 7TV Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "7TV Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047DC5423084F4410078E14C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		047DC5443084F4410078E14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047DC54F3084F4410078E14C /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = "../../../extension-official/index.html"; sourceTree = "<group>"; };
+		047DC5503084F4410078E14C /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../extension-official/background.js"; sourceTree = "<group>"; };
+		047DC5513084F4410078E14C /* worker.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = worker.js; path = "../../../extension-official/worker.js"; sourceTree = "<group>"; };
+		047DC5523084F4410078E14C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../../extension-official/manifest.json"; sourceTree = "<group>"; };
+		047DC5533084F4410078E14C /* site.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = site.js; path = "../../../extension-official/site.js"; sourceTree = "<group>"; };
+		047DC5543084F4410078E14C /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = "../../../extension-official/content.js"; sourceTree = "<group>"; };
+		047DC5553084F4410078E14C /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icon; path = "../../../extension-official/icon"; sourceTree = "<group>"; };
+		047DC5563084F4410078E14C /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = "../../../extension-official/fonts"; sourceTree = "<group>"; };
+		047DC5573084F4410078E14C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../../extension-official/assets"; sourceTree = "<group>"; };
+		047DC5583084F4410078E14C /* logo.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = logo.svg; path = "../../../extension-official/logo.svg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047DC51F3084F4400078E14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		047DC53A3084F4410078E14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047DC5193084F4400078E14C = {
+			isa = PBXGroup;
+			children = (
+				047DC5243084F4400078E14C /* 7TV Safari */,
+				047DC5413084F4410078E14C /* 7TV Safari Extension */,
+				047DC5233084F4400078E14C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047DC5233084F4400078E14C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047DC5223084F4400078E14C /* 7TV Safari.app */,
+				047DC53D3084F4410078E14C /* 7TV Safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047DC5243084F4400078E14C /* 7TV Safari */ = {
+			isa = PBXGroup;
+			children = (
+				047DC5253084F4400078E14C /* AppDelegate.swift */,
+				047DC5313084F4400078E14C /* ViewController.swift */,
+				047DC5333084F4400078E14C /* Main.storyboard */,
+				047DC5363084F4410078E14C /* Assets.xcassets */,
+				047DC5383084F4410078E14C /* Info.plist */,
+				047DC5273084F4400078E14C /* Resources */,
+			);
+			path = "7TV Safari";
+			sourceTree = "<group>";
+		};
+		047DC5273084F4400078E14C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047DC5283084F4400078E14C /* Main.html */,
+				047DC52B3084F4400078E14C /* Icon.png */,
+				047DC52D3084F4400078E14C /* Style.css */,
+				047DC52F3084F4400078E14C /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		047DC5413084F4410078E14C /* 7TV Safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				047DC54E3084F4410078E14C /* Resources */,
+				047DC5423084F4410078E14C /* SafariWebExtensionHandler.swift */,
+				047DC5443084F4410078E14C /* Info.plist */,
+			);
+			path = "7TV Safari Extension";
+			sourceTree = "<group>";
+		};
+		047DC54E3084F4410078E14C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047DC54F3084F4410078E14C /* index.html */,
+				047DC5503084F4410078E14C /* background.js */,
+				047DC5513084F4410078E14C /* worker.js */,
+				047DC5523084F4410078E14C /* manifest.json */,
+				047DC5533084F4410078E14C /* site.js */,
+				047DC5543084F4410078E14C /* content.js */,
+				047DC5553084F4410078E14C /* icon */,
+				047DC5563084F4410078E14C /* fonts */,
+				047DC5573084F4410078E14C /* assets */,
+				047DC5583084F4410078E14C /* logo.svg */,
+			);
+			name = Resources;
+			path = "7TV Safari Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047DC5213084F4400078E14C /* 7TV Safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047DC54B3084F4410078E14C /* Build configuration list for PBXNativeTarget "7TV Safari" */;
+			buildPhases = (
+				047DC51E3084F4400078E14C /* Sources */,
+				047DC51F3084F4400078E14C /* Frameworks */,
+				047DC5203084F4400078E14C /* Resources */,
+				047DC54A3084F4410078E14C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047DC5403084F4410078E14C /* PBXTargetDependency */,
+			);
+			name = "7TV Safari";
+			productName = "7TV Safari";
+			productReference = 047DC5223084F4400078E14C /* 7TV Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047DC53C3084F4410078E14C /* 7TV Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047DC5473084F4410078E14C /* Build configuration list for PBXNativeTarget "7TV Safari Extension" */;
+			buildPhases = (
+				047DC5393084F4410078E14C /* Sources */,
+				047DC53A3084F4410078E14C /* Frameworks */,
+				047DC53B3084F4410078E14C /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "7TV Safari Extension";
+			productName = "7TV Safari Extension";
+			productReference = 047DC53D3084F4410078E14C /* 7TV Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047DC51A3084F4400078E14C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					047DC5213084F4400078E14C = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					047DC53C3084F4410078E14C = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 047DC51D3084F4400078E14C /* Build configuration list for PBXProject "7TV Safari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047DC5193084F4400078E14C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 047DC5233084F4400078E14C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047DC5213084F4400078E14C /* 7TV Safari */,
+				047DC53C3084F4410078E14C /* 7TV Safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047DC5203084F4400078E14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				047DC52C3084F4400078E14C /* Icon.png in Resources */,
+				047DC5353084F4400078E14C /* Main.storyboard in Resources */,
+				047DC5303084F4400078E14C /* Script.js in Resources */,
+				047DC52A3084F4400078E14C /* Main.html in Resources */,
+				047DC5373084F4410078E14C /* Assets.xcassets in Resources */,
+				047DC52E3084F4400078E14C /* Style.css in Resources */,
+			);
+		};
+		047DC53B3084F4410078E14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				047DC55E3084F4410078E14C /* content.js in Resources */,
+				047DC55D3084F4410078E14C /* site.js in Resources */,
+				047DC55F3084F4410078E14C /* icon in Resources */,
+				047DC5613084F4410078E14C /* assets in Resources */,
+				047DC55C3084F4410078E14C /* manifest.json in Resources */,
+				047DC55A3084F4410078E14C /* background.js in Resources */,
+				047DC55B3084F4410078E14C /* worker.js in Resources */,
+				047DC5623084F4410078E14C /* logo.svg in Resources */,
+				047DC5593084F4410078E14C /* index.html in Resources */,
+				047DC5603084F4410078E14C /* fonts in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047DC51E3084F4400078E14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				047DC5323084F4400078E14C /* ViewController.swift in Sources */,
+				047DC5263084F4400078E14C /* AppDelegate.swift in Sources */,
+			);
+		};
+		047DC5393084F4410078E14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				047DC5433084F4410078E14C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047DC5403084F4410078E14C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047DC53C3084F4410078E14C /* 7TV Safari Extension */;
+			targetProxy = 047DC53F3084F4410078E14C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047DC5283084F4400078E14C /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047DC5293084F4400078E14C /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		047DC5333084F4400078E14C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047DC5343084F4400078E14C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047DC5453084F4410078E14C /* Debug configuration for PBXProject "7TV Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		047DC5463084F4410078E14C /* Release configuration for PBXProject "7TV Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		047DC5483084F4410078E14C /* Debug configuration for PBXNativeTarget "7TV Safari Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "7TV Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "7TV Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sevntv.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		047DC5493084F4410078E14C /* Release configuration for PBXNativeTarget "7TV Safari Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "7TV Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "7TV Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sevntv.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		047DC54C3084F4410078E14C /* Debug configuration for PBXNativeTarget "7TV Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "7TV Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "7TV Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sevntv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		047DC54D3084F4410078E14C /* Release configuration for PBXNativeTarget "7TV Safari" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "7TV Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "7TV Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sevntv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047DC51D3084F4400078E14C /* Build configuration list for PBXProject "7TV Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047DC5453084F4410078E14C /* Debug configuration for PBXProject "7TV Safari" */,
+				047DC5463084F4410078E14C /* Release configuration for PBXProject "7TV Safari" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		047DC5473084F4410078E14C /* Build configuration list for PBXNativeTarget "7TV Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047DC5483084F4410078E14C /* Debug configuration for PBXNativeTarget "7TV Safari Extension" */,
+				047DC5493084F4410078E14C /* Release configuration for PBXNativeTarget "7TV Safari Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		047DC54B3084F4410078E14C /* Build configuration list for PBXNativeTarget "7TV Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047DC54C3084F4410078E14C /* Debug configuration for PBXNativeTarget "7TV Safari" */,
+				047DC54D3084F4410078E14C /* Release configuration for PBXNativeTarget "7TV Safari" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047DC51A3084F4400078E14C /* Project object */;
+	validationLevel = 1;
+}

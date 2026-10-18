@@ -1,0 +1,18 @@
+.seventv-emote-wrap {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: -0.5rem 0.1rem;
+}
+.seventv-emote {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.8rem;
+  width: auto;
+}
+.seventv-emote-zw {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
